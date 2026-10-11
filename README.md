@@ -261,4 +261,5 @@ Before deployment:
 7. Add database-level constraints for apartment/slot relationships.
 8. Add SMS/WhatsApp integration through an approved provider rather than storing or sending credentials directly.
 #   P a r k g u a r d  
+ #   P a r k g u a r d  
  
