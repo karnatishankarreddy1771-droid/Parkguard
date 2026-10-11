@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: parkguard-api
+    runtime: docker
+    rootDir: parking
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: mysql
+      - key: DB_USERNAME
+        value: avnadmin
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_HOST
+        value: mysql-197c1d51-karnatishankarreddy1771-b761.f.aivencloud.com
+      - key: DB_PORT
+        value: "17323"
+      - key: DB_NAME
+        value: defaultdb
+      - key: DB_SSL_MODE
+        value: REQUIRED
+      - key: PARKING_JWT_SECRET
+        generateValue: true
+      - key: PARKING_ADMIN_EMAIL
+        sync: false
+      - key: PARKING_ADMIN_PASSWORD
+        sync: false
+      - key: PARKING_CORS_ORIGINS
+        sync: false
