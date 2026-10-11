@@ -1,0 +1,19 @@
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated application data and build output
+parking/data/
+parking/target/
+frntd/node_modules/
+frntd/dist/
+frntd/.vite/
+
+# IDE and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
