@@ -1,6 +1,7 @@
 services:
   - type: web
     name: parkguard-api
+    plan: free
     runtime: docker
     rootDir: parking
     dockerfilePath: ./Dockerfile
